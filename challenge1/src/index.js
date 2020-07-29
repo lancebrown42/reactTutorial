@@ -25,8 +25,21 @@ const user = {
 function App() {
   return (
     <div className="App">
-      {/* Show user data here */}
-      <div className="user-deets">display user info here. happy coding!</div>
+      {/*user*/}
+      <div className="user-deets">
+      	<img src={user.avatar}/>
+	<h3>{user.name}</h3>
+	<strong>Location</strong>
+	<p>{user.location}</p>
+        <strong>Eats</strong>
+        <p>{user.foodType}</p>
+	<strong>Age</strong>
+	<p>{user.age}</p>
+	<strong>Likes</strong>
+	<p>{user.likes}</p>
+	<strong>Twitter</strong>
+	<a href={"https://www.twitter.com/" + user.twitterUsername}>@{user.twitterUsername}</a>
+      </div>
 
       <ScotchInfoBar />
     </div>
